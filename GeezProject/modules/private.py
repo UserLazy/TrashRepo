@@ -28,17 +28,17 @@ logging.basicConfig(level=logging.INFO)
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>Haii {message.from_user.first_name} saya adalah {PROJECT_NAME}\n
-Saya Adalah Bot Music Group, Yang dapat Memutar Lagu di Voice Chat Group Anda Dengan Mudah
-Saya Memiliki Banyak Fitur Seperti :
-• Memutar Musik.
-• Mendownload Lagu.
-• Mencari Lagu Yang ingin di Putar atau di Download.
-• Gunakan Perintah » /help « untuk Mengetahui Fitur Lengkapnya
+        f"""<b>Hello {message.from_user.first_name} I am {PROJECT_NAME}\n
+I Am a Music Group Bot, Who Can Play Songs in Your Group Voice Chat Easily
+I Have Many Features Like:
+• Play music.
+• Downloading Songs.
+• Search for the song you want to play or download.
+• Use the command » /help « to find out the full features
 
 📌 Special Thanks To : {OWNER}
 
-Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
+Want to Add Me to Your Group? Add Me To Your Group!
 </b>""",
 
 # Edit Yang Seharusnya Lu Edit Aja:D
@@ -56,7 +56,7 @@ Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
                         "🎈 Group Support", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "Zona Greenland", url=f"https://{SOURCE_CODE}")
+                        "Anime Grup Indonesia", url=f"https://{SOURCE_CODE}")
                 ],[
                     InlineKeyboardButton(
                         "🎁 Donate", url=f"https://t.me/RxyMX")
@@ -101,7 +101,7 @@ def map(pos):
             [InlineKeyboardButton("➕ Tambahkan saya ke Grup Anda ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
             [InlineKeyboardButton(text = '💬 Channel Updates', url=f"https://t.me/{UPDATES_CHANNEL}"),
              InlineKeyboardButton(text = '🔰 Group Support', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = 'Zona Greenland', url=f"https://{SOURCE_CODE}")],
+            [InlineKeyboardButton(text = 'Anime Grup Indonesia', url=f"https://{SOURCE_CODE}")],
             [InlineKeyboardButton(text = '«', callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -121,15 +121,15 @@ def map(pos):
 )
 async def start(client: Client, message: Message):
     await message.reply_text(
-        "💁🏻‍♂️ **Apakah Anda ingin mencari Link YouTube?**",
+        "💁🏻‍♂️ **Do you want to find YouTube Link?**",
         reply_markup=InlineKeyboardMarkup(
             [   
                 [    
                     InlineKeyboardButton(
-                        "✅ Ya", switch_inline_query_current_chat=""
+                        "✅ Yes", switch_inline_query_current_chat=""
                     ),
                     InlineKeyboardButton(
-                        "❌ Tidak ", callback_data="close"
+                        "❌ No ", callback_data="close"
                     )
                 ]
             ]
@@ -144,12 +144,12 @@ async def start(client: Client, message: Message):
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
-        """**Klik Tombol dibawah untuk Melihat Cara Menggunakan Bot**""",
+        """**Click the button below to see how to use the bot**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "📜 Cara Menggunakan BOT 📜", url="https://t.me/IhsanBio/62"
+                        "📜 How to Use BOT 📜", url="https://t.me/IhsanBio/62"
                     )
                 ]
             ]
@@ -163,7 +163,7 @@ async def help(client: Client, message: Message):
     & ~ filters.edited
 )
 async def reload(client: Client, message: Message):
-    await message.reply_text("""✅ Bot **berhasil dimulai ulang!**\n\n• **Daftar admin** telah **diperbarui**""",
+    await message.reply_text("""✅ Bot **restart successfully!**\n\n• **List admin** is **Updated**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
