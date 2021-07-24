@@ -39,9 +39,8 @@ f"""
 
 **» Commands for members in the group can also :**
 
- × /play <song title> : To Play the song you requested via youtube
- × /play <link yt> : To Play the song you requested via the youtube link
- × /play <reply to audio> : To Play the song you requested via an audio file
+ × /req <song title> : To Play the song you requested via youtube
+ × /ytreq <link yt> : To Play the song you requested via the youtube link
  × /dplay : To Play the song you requested via deezer
  × /splay : To Play the song you requested via jio saavn
  × /playlist : To Display the current Song playlist
