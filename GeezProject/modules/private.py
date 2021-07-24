@@ -48,7 +48,7 @@ Want to Add Me to Your Group? Add Me To Your Group!
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Tambahkan saya ke Grup Anda ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "➕ Add Me To Your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
                         "💬 Channel Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
